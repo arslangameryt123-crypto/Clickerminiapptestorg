@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Admin Panel</h1>
+            <button id="logout-btn">Logout</button>
+        </header>
+
+        <div class="admin-content">
+            <div class="stats-section">
+                <h2>Game Statistics</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>Total Players</h3>
+                        <p id="total-players">150</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Total Clicks</h3>
+                        <p id="total-clicks">2,450</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Ads Watched</h3>
+                        <p id="ads-watched">320</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Revenue</h3>
+                        <p id="revenue">$24.50</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ad-controls">
+                <h2>Ad Management</h2>
+                <div class="control-group">
+                    <label>
+                        <input type="checkbox" id="banner-ads-toggle" checked>
+                        Enable Banner Ads
+                    </label>
+                </div>
+                <div class="control-group">
+                    <label>
+                        <input type="checkbox" id="interstitial-ads-toggle" checked>
+                        Enable Interstitial Ads
+                    </label>
+                </div>
+                <div class="control-group">
+                    <label>
+                        <input type="checkbox" id="rewarded-ads-toggle" checked>
+                        Enable Rewarded Ads
+                    </label>
+                </div>
+                <div class="control-group">
+                    <label>
+                        Ad Frequency (minutes):
+                        <input type="number" id="ad-frequency" value="5" min="1">
+                    </label>
+                </div>
+                <button id="save-settings">Save Settings</button>
+            </div>
+
+            <div class="user-data">
+                <h2>User Data</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>User ID</th>
+                            <th>Score</th>
+                            <th>Ads Watched</th>
+                            <th>Last Active</th>
+                        </tr>
+                    </thead>
+                    <tbody id="user-data-body">
+                        <!-- User data will be populated here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
