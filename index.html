@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Mini Game</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css">	
+    <!-- <script src='//libtl.com/sdk.js' data-zone='9795096' data-sdk='show_9795096'></script>  -->
+    
+    
+<script src="https://ad.gigapub.tech/script?id=2496"></script>
+    
+         <script type="text/javascript" src="https://cdn.tgads.space/assets/js/adexium-widget.min.js"></script>
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', () => {
+        const adexiumWidget = new AdexiumWidget({wid: '342684d7-64bd-4912-bfc4-1098566cf764', adFormat: 'interstitial'});
+        adexiumWidget.autoMode();
+    });
+</script>
+       
+       <script type="text/javascript" src="https://cdn.tgads.space/assets/js/adexium-widget.min.js"></script>
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', () => {
+        const adexiumWidget = new AdexiumWidget({wid: '342684d7-64bd-4912-bfc4-1098566cf764', adFormat: 'push-like'});
+        adexiumWidget.autoMode();
+    });
+</script>
+    
+</head>
+<body>
+    <div class="container">
+        <!-- Banner Ad at the top -->
+        <div id="banner-ad" class="ad-container">
+            <p>Banner Ad Space (728x90)</p>
+        </div>
+        
+        <h1>Simple Clicker Game</h1>
+        
+        <div class="game-container">
+            <p>Score: <span id="score">0</span></p>
+            <button id="click-btn">Click Me!</button>
+            <button id="rewarded-ad-btn">Watch Ad for 10 Points</button>
+        </div>
+        
+        <div class="ad-buttons">
+            <button id="interstitial-btn">Show Interstitial Ad</button>
+            <button id="pop-ad-btn">Show Pop Ad</button>
+        </div>
+        
+        <div class="admin-link">
+            <a href="admin.html" id="admin-link">Admin Panel</a>
+        </div>
+    </div>
+
+    <!-- Interstitial Ad Overlay -->
+    <div id="interstitial-ad" class="ad-overlay hidden">
+        <div class="ad-content">
+            <h2>Interstitial Ad</h2>
+            <p>This would be a full-screen ad</p>
+            <button id="close-interstitial">Close Ad</button>
+        </div>
+    </div>
+
+    <!-- Pop Ad Overlay -->
+    <div id="pop-ad" class="ad-overlay hidden">
+        <div class="ad-content">
+            <h2>Pop Ad</h2>
+            <p>This would be a popup ad</p>
+            <button id="close-pop">Close Ad</button>
+        </div>
+    </div>
+
+    <!-- Rewarded Ad Overlay -->
+    <div id="rewarded-ad" class="ad-overlay hidden">
+        <div class="ad-content">
+            <h2>Rewarded Ad</h2>
+            <p>Watch this ad to earn 10 points!</p>
+            <div class="ad-timer">Ad completes in <span id="timer">5</span> seconds</div>
+            <button id="close-rewarded">Close Ad</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="game.js"></script>
+    <script src="telegram-integration.js"></script>
+</body> 
+</html>
